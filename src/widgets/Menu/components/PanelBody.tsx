@@ -33,6 +33,15 @@ const StyledMenuEntry = styled(MenuEntry)`
   }
 `;
 
+const StyledSoon = styled.span`
+  background-color: #0095ff;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 2px 3px;
+`;
+
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
 
@@ -63,7 +72,10 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               {isPushed &&
                 entry.items.map((item) => (
                   <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
-                    <MenuLink href={item.href} target={item.target}>{item.label}</MenuLink>
+                    <MenuLink href={item.href} target={item.target} style={{justifyContent: 'space-between'}}>
+                      {item.label}
+                      {item.href === "soon" ? <StyledSoon>soon</StyledSoon> : null}
+                    </MenuLink>
                   </MenuEntry>
                 ))}
             </Accordion>
@@ -74,6 +86,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
             <MenuLink href={entry.href} target={entry.target} onClick={handleClick}>
               {/* {iconElement} */}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
+              {entry.href === "soon" ? <StyledSoon>soon</StyledSoon> : null}
             </MenuLink>
           </StyledMenuEntry>
         );

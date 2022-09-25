@@ -3,10 +3,21 @@ import { NavLink } from "react-router-dom";
 
 const MenuLink: React.FC<AnchorHTMLAttributes<HTMLAnchorElement>> = ({ href, ...otherProps }) => {
   const isHttpLink = href?.startsWith("http");
+  const isSoon = href?.startsWith("soon");
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const Tag: any = isHttpLink ? "a" : NavLink;
-  const props = isHttpLink ? { href } : { to: href };
+  if(isHttpLink){
+    const Tag: any = "a";
+    const props = { href };
+    return <Tag {...props} {...otherProps} />;
+  } 
+  if(isSoon) {
+    const Tag: any = "a";
+    return <Tag {...otherProps} />;
+  }
+
+  const Tag: any = NavLink;
+  const props = { to: href };
   return <Tag {...props} {...otherProps} />;
 };
 

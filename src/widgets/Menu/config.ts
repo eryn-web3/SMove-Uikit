@@ -31,7 +31,7 @@ export const links = [
   {
     label: "Certik Audit (In-Progress)",
     icon: "ShieldIcon",
-    href: "https://twitter.com/smove/status/1367218225310818308",
+    href: "https://twitter.com/fitswap1/status/1367218225310818308",
     target: "_blank",
   },
   {
@@ -129,12 +129,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/smove_finance",
+    href: "https://t.me/GetFit2EarnSwap",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/smove",
+    href: "https://twitter.com/fitswap1",
   },
 ];
 

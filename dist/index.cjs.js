@@ -3099,7 +3099,7 @@ var templateObject_1$S;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#ed3949",
+    primary: "#0063f8",
     primaryBright: "#ffb948",
     primaryDark: "#991e29",
     secondary: "#ffb948",
@@ -3114,9 +3114,9 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
     inputSecondary: "#cccccc", tertiary: "#f5f3ef", text: "#333333", textDisabled: "#BDC2C4", textSubtle: "#703c2c", activeButton: "#397f49", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#FFFFFF", priceBackground: "#FFFFFF", priceBorder: "#433734", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#101010", backgroundDisabled: "#2a2a2a", contrast: "#FFFFFF", invertedContrast: "#1a1a1a", input: "#2a2a2a", 
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#1c1c27", backgroundDisabled: "#2a2a2a", contrast: "#FFFFFF", invertedContrast: "#1a1a1a", input: "#2a2a2a", 
     // inputBorder: "#cccccc",    
-    inputSecondary: "#cccccc", tertiary: "#1a1a1a", text: "#fff", textDisabled: "#716a61", textSubtle: "#fff", activeButton: "#397f49", borderColor: "#2a2a2a", card: "#080808", nav: "#130119", priceBackground: "#2a2a2a", priceBorder: "#2B373D", gradients: {
+    inputSecondary: "#cccccc", tertiary: "#28293d", text: "#808198", textDisabled: "#716a61", textSubtle: "#fff", activeButton: "#397f49", borderColor: "#2a2a2a", card: "#28293d", nav: "#1c1c27", priceBackground: "#2a2a2a", priceBorder: "#2B373D", gradients: {
         bubblegum: "linear-gradient(139.73deg, #893e92 0%, #3a0e40 100%)",
     } });
 
@@ -3161,11 +3161,11 @@ var dark$3 = {
 };
 
 var light$4 = {
-    background: lightColors.card,
+    background: lightColors.nav,
     hover: "#EEEAF4",
 };
 var dark$4 = {
-    background: darkColors.card,
+    background: darkColors.nav,
     hover: "#473d5d",
 };
 
